@@ -2,7 +2,7 @@
 layout: post
 title:  "Starting a new project - Isis Script"
 date:   2015-06-04 15:47:00
-categories: isis dsl eclipse xtext sculptor
+tags: isis dsl eclipse xtext sculptor
 ---
 Recently I found some spare time to look into [Sculptor issue #158](https://github.com/sculptor/sculptor/issues/158). Here [Dan Haywood](https://github.com/danhaywood) suggested to add support for the [programming model](http://isis.apache.org/documentation.html) of [Apache Isis](http://isis.apache.org/).
 

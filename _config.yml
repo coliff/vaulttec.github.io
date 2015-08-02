@@ -1,0 +1,16 @@
+# Site settings
+title: Vaulttec
+email: torsten.juergeleit@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A blog about developing software.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://vaulttec.org" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username:  vaulttec
+
+gems:
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+pygments_options: ['lineanchors', 'linenos=table']

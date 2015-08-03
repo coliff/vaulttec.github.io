@@ -2,6 +2,7 @@
 <html>
 
   {% include head.html %}
+  {% include google_analytics.html %}
 
   <body>
 
@@ -12,6 +13,8 @@
         {{ content }}
       </div>
     </div>
+
+    {% include comments.html %}
 
     {% include footer.html %}
 

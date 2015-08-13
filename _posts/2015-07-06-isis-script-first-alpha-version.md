@@ -17,7 +17,7 @@ Only a few features are available yet:
 
 The current feature set allows us to implement the entity and repository of the domain object `SimpleObject` from the [Apache Isis Maven archetype SimpleApp](http://isis.apache.org/guides/ug.html#_ug_getting-started_simpleapp-archetype). The corresponding Isis Script (based on the current version of the DSL) is as follows:
 
-```
+```java
 package domainapp.dom.modules.simple
 
 import javax.jdo.annotations.Column
@@ -78,11 +78,11 @@ entity SimpleObject {
 		getName()
 	}
 
-    action validateUpdateName(String name) {
-        if (name.contains("!"))
-        	TranslatableString.tr("Exclamation mark is not allowed")
-        else null
-    }
+	action validateUpdateName(String name) {
+		if (name.contains("!"))
+			TranslatableString.tr("Exclamation mark is not allowed")
+		else null
+	}
 
 	@DomainServiceLayout(menuOrder = "10")
 	repository {

@@ -17,7 +17,7 @@ Only a few features are available yet:
 
 The current feature set allows us to implement the entity and repository of the domain object `SimpleObject` from the [Apache Isis Maven archetype SimpleApp](http://isis.apache.org/guides/ug.html#_ug_getting-started_simpleapp-archetype). The corresponding Isis Script (based on the current version of the DSL) is as follows:
 
-~~~java
+{% highlight java %}
 package domainapp.dom.modules.simple
 
 import javax.jdo.annotations.Column
@@ -115,7 +115,7 @@ entity SimpleObject {
 		TranslatableString.tr("Object: {name}", "name", name)
 	}
 }
-~~~
+{% endhighlight %}
 
 Technical details of the implementation can be found [here](https://github.com/vaulttec/isis-script#the-implementation).
 

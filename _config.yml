@@ -15,4 +15,5 @@ gems:
 markdown: kramdown
 kramdown:
   input: GFM
-  enable_coderay: true
+
+highlighter: pygments

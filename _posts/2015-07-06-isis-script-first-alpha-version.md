@@ -87,8 +87,8 @@ entity SimpleObject {
 	@DomainServiceLayout(menuOrder = "10")
 	repository {
 
-    	@Action(semantics = SemanticsOf.SAFE)
-    	@ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
+		@Action(semantics = SemanticsOf.SAFE)
+		@ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
 		@MemberOrder(sequence = "1")
 		action listAll() {
 			container.allInstances(SimpleObject)

@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "Isis Script - First (alpha) version available"
+author: Torsten Juergeleit
 date:   2015-07-06 16:32:00
 tags: isis dsl eclipse xtext
 comments: true
 ---
-As mentioned in my [previous post](/2015/06/04/starting-new-project-isis-script) I've been working on a DSL for [Apache Isis](http://isis.apache.org/). Now a first (alpha) version is finished. This version provides a very early stage of an [Eclipse editor](https://github.com/vaulttec/isis-script#the-eclipse-dsl-editor) for the [Isis Script DSL](https://github.com/vaulttec/isis-script#the-dsl).
+As mentioned in my [previous post]({% 2015-06-04-starting-new-project-isis-script %}) I've been working on a DSL for [Apache Isis](http://isis.apache.org/). Now a first (alpha) version is finished. This version provides a very early stage of an [Eclipse editor](https://github.com/vaulttec/isis-script#the-eclipse-dsl-editor) for the [Isis Script DSL](https://github.com/vaulttec/isis-script#the-dsl).
 
 ![Isis Script DSL Editor](/images/2015-07-06-isis-script-first-alpha-version/simpleobject-dsl-editor.png)
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Starting a new project - Isis Script"
+author: Torsten Juergeleit
 date:   2015-06-04 15:47:00
 tags: isis dsl eclipse xtext sculptor
 comments: true

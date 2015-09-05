@@ -15,7 +15,7 @@ Now the following features are support:
  * [Entities](https://github.com/vaulttec/isis-script/blob/develop/dsl.md#entities) with injections, properties, collections, action, events and UI hints
  * [Services](https://github.com/vaulttec/isis-script/blob/develop/dsl.md#services) with injections, actions and events
 
-This feature set allows us to implement the entity and the repository service of the domain object `SimpleObject` from the [Apache Isis Maven archetype SimpleApp](http://isis.apache.org/guides/ug.html#_ug_getting-started_simpleapp-archetype). The corresponding Isis Script (based on the new version of the DSL) is as follows:
+This feature set allows us to implement the entity and the repository service of the domain object `SimpleObject` from the [Apache Isis Maven archetype SimpleApp](http://isis.apache.org/guides/ug.html#_ug_getting-started_simpleapp-archetype). The corresponding Isis Scripts (based on the new version of the DSL) are as follows:
 
 {% highlight java %}
 package domainapp.dom.modules.simple

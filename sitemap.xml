@@ -142,10 +142,6 @@
   </url>
   
   <url>
-    <loc>http://vaulttec.org/projects/</loc>
-  </url>
-  
-  <url>
     <loc>http://vaulttec.org/tags/ansible/</loc>
     <priority>0</priority>
   </url>

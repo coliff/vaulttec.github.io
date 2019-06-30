@@ -153,15 +153,5 @@ Only a few features are available yet:
 The DSL outlined in JIRA ticket ISIS-369 shows similarities to Sculptors DSL: It has persistent entities (with properties/attributes and actions/operations) and services (actions/operations). The Isis DSL defines a model with objects which can be directly mapped to fully functional Java objects (with annotations and code blocks).</description>
     </item>
     
-    <item>
-      <title>Projects</title>
-      <link>http://vaulttec.org/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://vaulttec.org/projects/</guid>
-      <description>Projects I&amp;rsquo;ve been working on:
- Isis Script, a xtext-based DSL for the Apache Isis framework Veloedit, an eclipse-based editor for the Apache Velocity template language (VTL) Ansible roles for installation of Vagrant, Zsh or Sublime Text  </description>
-    </item>
-    
   </channel>
 </rss>

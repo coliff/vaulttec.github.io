@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://vaulttec.org/project/idm-sync/</loc>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/project/gitlab-enforcer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/project/sonar-auth-oidc/</loc>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/project/sculptor/</loc>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/project/anisble-roles/</loc>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/project/veloedit/</loc>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/project/isis-script/</loc>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/post/</loc>
+    <lastmod>2016-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/</loc>
+    <lastmod>2016-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/</loc>
+    <lastmod>2016-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/post/veloedit-now-availble-on-github/</loc>
+    <lastmod>2016-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/eclipse/</loc>
+    <lastmod>2016-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/velocity/</loc>
+    <lastmod>2016-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/post/enabling-template-variable-resolver-for-xbase-imports/</loc>
+    <lastmod>2015-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/xbase/</loc>
+    <lastmod>2015-10-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/xtext/</loc>
+    <lastmod>2015-10-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/post/isis-script-updated-alpha-version/</loc>
+    <lastmod>2015-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/dsl/</loc>
+    <lastmod>2015-09-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/isis/</loc>
+    <lastmod>2015-09-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/post/isis-script-dsl-description/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/post/isis-script-and-maven/</loc>
+    <lastmod>2015-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/maven/</loc>
+    <lastmod>2015-07-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/post/isis-script-first-alpha-version/</loc>
+    <lastmod>2015-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/post/starting-new-project-isis-script/</loc>
+    <lastmod>2015-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/sculptor/</loc>
+    <lastmod>2015-06-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/project/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/ansible/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/ansible-role/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/authentication/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/authorization/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/code-generator/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/ddd/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/gitlab/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/keycloak/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/mattermost/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/oauth2/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/oidc/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/open-id-connect/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/plugin/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/sonarqube/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/spring-boot/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/sublime-text/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/vagrant/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/xtend/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vaulttec.org/tags/zsh/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oidc on Vaulttec</title>
+    <link>http://vaulttec.org/tags/oidc/</link>
+    <description>Recent content in oidc on Vaulttec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://vaulttec.org/tags/oidc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sonar Auth OIDC</title>
+      <link>http://vaulttec.org/project/sonar-auth-oidc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/sonar-auth-oidc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sculptor on Vaulttec</title>
+    <link>http://vaulttec.org/tags/sculptor/</link>
+    <description>Recent content in sculptor on Vaulttec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jun 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://vaulttec.org/tags/sculptor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sculptor</title>
+      <link>http://vaulttec.org/project/sculptor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/sculptor/</guid>
+      <description>Sculptor is an open source productivity tool that applies the concepts from Domain-Driven Design and Domain Specific Languages.
+You express your design intent in a textual specification (within an Eclipse editor), from which Sculptor generates (with a Maven plugin) high quality Java code and configuration. You can use the concepts from Domain-Driven Design (DDD) in the textual Domain Specific Language (DSL). E.g. Service, Module, Entity, Value Object, Repository.
+The generated code is based on well-known frameworks, such as JPA, Hibernate, Spring Framework or Java EE.</description>
+    </item>
+    
+    <item>
+      <title>Starting a new project - Isis Script</title>
+      <link>http://vaulttec.org/post/starting-new-project-isis-script/</link>
+      <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/post/starting-new-project-isis-script/</guid>
+      <description>Recently I found some spare time to look into Sculptor issue #158. Here Dan Haywood suggested to add support for the programming model of Apache Isis.
+The DSL outlined in JIRA ticket ISIS-369 shows similarities to Sculptors DSL: It has persistent entities (with properties/attributes and actions/operations) and services (actions/operations). The Isis DSL defines a model with objects which can be directly mapped to fully functional Java objects (with annotations and code blocks).</description>
+    </item>
+    
+  </channel>
+</rss>

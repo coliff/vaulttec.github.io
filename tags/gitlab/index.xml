@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gitlab on Vaulttec</title>
+    <link>http://vaulttec.org/tags/gitlab/</link>
+    <description>Recent content in gitlab on Vaulttec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://vaulttec.org/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IDM Sync</title>
+      <link>http://vaulttec.org/project/idm-sync/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/idm-sync/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitLab Enforcer</title>
+      <link>http://vaulttec.org/project/gitlab-enforcer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/gitlab-enforcer/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

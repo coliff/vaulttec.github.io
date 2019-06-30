@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ansible role on Vaulttec</title>
+    <link>http://vaulttec.org/tags/ansible-role/</link>
+    <description>Recent content in ansible role on Vaulttec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://vaulttec.org/tags/ansible-role/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ansible Roles</title>
+      <link>http://vaulttec.org/project/anisble-roles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/anisble-roles/</guid>
+      <description>Ansible roles for installation of
+ Vagrant Zsh Sublime Text  </description>
+    </item>
+    
+  </channel>
+</rss>

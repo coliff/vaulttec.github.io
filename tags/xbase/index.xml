@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xbase on Vaulttec</title>
+    <link>http://vaulttec.org/tags/xbase/</link>
+    <description>Recent content in xbase on Vaulttec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Oct 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://vaulttec.org/tags/xbase/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Enabling TemplateVariableResolver for Xbase imports in Xtext editor</title>
+      <link>http://vaulttec.org/post/enabling-template-variable-resolver-for-xbase-imports/</link>
+      <pubDate>Sun, 04 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/post/enabling-template-variable-resolver-for-xbase-imports/</guid>
+      <description>While implementing code templates for the Isis Script DSL editor I struggled with the template variable resolver for Xbase Imports.
+Despite the corresponding TemplateVariableResolver implementation ImportsVariableResolver is active by default it&amp;rsquo;s not working as expected - no imports are added.
+Debugging the implementation of the resolveVariables() method reveals that it doesn&amp;rsquo;t get the expected TemplateContext implementation XbaseTemplateContext which provides access to the DSLs import section:
+public List&amp;lt;String&amp;gt; resolveValues(TemplateVariable variable, XtextTemplateContext xtextTemplateContext) { variable.</description>
+    </item>
+    
+  </channel>
+</rss>

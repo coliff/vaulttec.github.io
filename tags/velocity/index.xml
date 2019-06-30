@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>velocity on Vaulttec</title>
+    <link>http://vaulttec.org/tags/velocity/</link>
+    <description>Recent content in velocity on Vaulttec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://vaulttec.org/tags/velocity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Veloedit</title>
+      <link>http://vaulttec.org/project/veloedit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/veloedit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Veloedit - Now available on GitHub</title>
+      <link>http://vaulttec.org/post/veloedit-now-availble-on-github/</link>
+      <pubDate>Tue, 05 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/post/veloedit-now-availble-on-github/</guid>
+      <description>Recently I found some spare time to look into an issue with one of my first OSS projects - the Eclipse plugin Veloedit (published on SourceForge in 2002). Here was reported in bug #12 that the initialization of the Velocity runtime is broken in recent versions of Eclipse.
+After fixing this issue (by adding 6 lines of code) I had to fiddle around with yesterdays technology:
+ commiting to CVS building Eclipse plugins manually via PDE uploading files to SourceForge manually via SSH  Here I took the opportunity to improve the overall process with approaches I used in another OSS project (Sculptor - Release 3.</description>
+    </item>
+    
+  </channel>
+</rss>

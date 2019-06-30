@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Vaulttec</title>
+    <link>http://vaulttec.org/tags/</link>
+    <description>Recent content in Tags on Vaulttec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://vaulttec.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>eclipse</title>
+      <link>http://vaulttec.org/tags/eclipse/</link>
+      <pubDate>Tue, 05 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/eclipse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>velocity</title>
+      <link>http://vaulttec.org/tags/velocity/</link>
+      <pubDate>Tue, 05 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/velocity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xbase</title>
+      <link>http://vaulttec.org/tags/xbase/</link>
+      <pubDate>Sun, 04 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/xbase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xtext</title>
+      <link>http://vaulttec.org/tags/xtext/</link>
+      <pubDate>Sun, 04 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/xtext/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dsl</title>
+      <link>http://vaulttec.org/tags/dsl/</link>
+      <pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/dsl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>isis</title>
+      <link>http://vaulttec.org/tags/isis/</link>
+      <pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/isis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maven</title>
+      <link>http://vaulttec.org/tags/maven/</link>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sculptor</title>
+      <link>http://vaulttec.org/tags/sculptor/</link>
+      <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/sculptor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ansible</title>
+      <link>http://vaulttec.org/tags/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ansible role</title>
+      <link>http://vaulttec.org/tags/ansible-role/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/ansible-role/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authentication</title>
+      <link>http://vaulttec.org/tags/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/authentication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authorization</title>
+      <link>http://vaulttec.org/tags/authorization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/authorization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code generator</title>
+      <link>http://vaulttec.org/tags/code-generator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/code-generator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ddd</title>
+      <link>http://vaulttec.org/tags/ddd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/ddd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitlab</title>
+      <link>http://vaulttec.org/tags/gitlab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/gitlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keycloak</title>
+      <link>http://vaulttec.org/tags/keycloak/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/keycloak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mattermost</title>
+      <link>http://vaulttec.org/tags/mattermost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/mattermost/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oauth2</title>
+      <link>http://vaulttec.org/tags/oauth2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/oauth2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oidc</title>
+      <link>http://vaulttec.org/tags/oidc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/oidc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open id connect</title>
+      <link>http://vaulttec.org/tags/open-id-connect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/open-id-connect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plugin</title>
+      <link>http://vaulttec.org/tags/plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/plugin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sonarqube</title>
+      <link>http://vaulttec.org/tags/sonarqube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/sonarqube/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spring boot</title>
+      <link>http://vaulttec.org/tags/spring-boot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/spring-boot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sublime text</title>
+      <link>http://vaulttec.org/tags/sublime-text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/sublime-text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vagrant</title>
+      <link>http://vaulttec.org/tags/vagrant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/vagrant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xtend</title>
+      <link>http://vaulttec.org/tags/xtend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/xtend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zsh</title>
+      <link>http://vaulttec.org/tags/zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/tags/zsh/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

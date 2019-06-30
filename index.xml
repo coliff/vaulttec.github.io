@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vaulttec</title>
+    <link>http://vaulttec.org/</link>
+    <description>Recent content on Vaulttec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://vaulttec.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IDM Sync</title>
+      <link>http://vaulttec.org/project/idm-sync/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/idm-sync/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitLab Enforcer</title>
+      <link>http://vaulttec.org/project/gitlab-enforcer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/gitlab-enforcer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sonar Auth OIDC</title>
+      <link>http://vaulttec.org/project/sonar-auth-oidc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/sonar-auth-oidc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sculptor</title>
+      <link>http://vaulttec.org/project/sculptor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/sculptor/</guid>
+      <description>Sculptor is an open source productivity tool that applies the concepts from Domain-Driven Design and Domain Specific Languages.
+You express your design intent in a textual specification (within an Eclipse editor), from which Sculptor generates (with a Maven plugin) high quality Java code and configuration. You can use the concepts from Domain-Driven Design (DDD) in the textual Domain Specific Language (DSL). E.g. Service, Module, Entity, Value Object, Repository.
+The generated code is based on well-known frameworks, such as JPA, Hibernate, Spring Framework or Java EE.</description>
+    </item>
+    
+    <item>
+      <title>Ansible Roles</title>
+      <link>http://vaulttec.org/project/anisble-roles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/anisble-roles/</guid>
+      <description>Ansible roles for installation of
+ Vagrant Zsh Sublime Text  </description>
+    </item>
+    
+    <item>
+      <title>Veloedit</title>
+      <link>http://vaulttec.org/project/veloedit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/veloedit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Isis Script</title>
+      <link>http://vaulttec.org/project/isis-script/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/project/isis-script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Veloedit - Now available on GitHub</title>
+      <link>http://vaulttec.org/post/veloedit-now-availble-on-github/</link>
+      <pubDate>Tue, 05 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/post/veloedit-now-availble-on-github/</guid>
+      <description>Recently I found some spare time to look into an issue with one of my first OSS projects - the Eclipse plugin Veloedit (published on SourceForge in 2002). Here was reported in bug #12 that the initialization of the Velocity runtime is broken in recent versions of Eclipse.
+After fixing this issue (by adding 6 lines of code) I had to fiddle around with yesterdays technology:
+ commiting to CVS building Eclipse plugins manually via PDE uploading files to SourceForge manually via SSH  Here I took the opportunity to improve the overall process with approaches I used in another OSS project (Sculptor - Release 3.</description>
+    </item>
+    
+    <item>
+      <title>Enabling TemplateVariableResolver for Xbase imports in Xtext editor</title>
+      <link>http://vaulttec.org/post/enabling-template-variable-resolver-for-xbase-imports/</link>
+      <pubDate>Sun, 04 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/post/enabling-template-variable-resolver-for-xbase-imports/</guid>
+      <description>While implementing code templates for the Isis Script DSL editor I struggled with the template variable resolver for Xbase Imports.
+Despite the corresponding TemplateVariableResolver implementation ImportsVariableResolver is active by default it&amp;rsquo;s not working as expected - no imports are added.
+Debugging the implementation of the resolveVariables() method reveals that it doesn&amp;rsquo;t get the expected TemplateContext implementation XbaseTemplateContext which provides access to the DSLs import section:
+public List&amp;lt;String&amp;gt; resolveValues(TemplateVariable variable, XtextTemplateContext xtextTemplateContext) { variable.</description>
+    </item>
+    
+    <item>
+      <title>Isis Script - Updated (alpha) version available</title>
+      <link>http://vaulttec.org/post/isis-script-updated-alpha-version/</link>
+      <pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/post/isis-script-updated-alpha-version/</guid>
+      <description>As mentioned in my previous post a formal description of the Isis Script DSL can be found on GitHub. An updated implementation of the Isis Script Eclipse editor is available as well.
+Now the following features are support:
+ Entities with injections, properties, collections, action, events and UI hints Services with injections, actions and events  This feature set allows us to implement the entity and the repository service of the domain object SimpleObject from the Apache Isis Maven archetype SimpleApp.</description>
+    </item>
+    
+    <item>
+      <title>Isis Script DSL Description</title>
+      <link>http://vaulttec.org/post/isis-script-dsl-description/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/post/isis-script-dsl-description/</guid>
+      <description>A formal description of the Isis Script DSL is available on GitHub now. It contains all the details found in ISIS-369 and the Apache Isis mailing list.
+In comparison to the formerly published alpha version of the DSL this version provides the complete feature set of Apache Isis Entities and Services:
+ The simplistic actions are replaced by full-blown actions with parameters, rules and events Collections are defined now Separate events for properties, collections and actions  The concept of a dedicated service for entity repositories was dropped due to the increased complexity of the resulting DSL grammar while providing only small benefits (e.</description>
+    </item>
+    
+    <item>
+      <title>Isis Script and Maven</title>
+      <link>http://vaulttec.org/post/isis-script-and-maven/</link>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/post/isis-script-and-maven/</guid>
+      <description>This post answers the question from issue #5 on how to generate Java code from an Isis Script file in a Maven build.
+For using Xtext-based languages in Maven builds, the Xtext project provides a dedicated Maven plugin - xtext-maven-plugin. Here a Maven user just adds the corresponding Xtext language artifact as a dependency to this plugin and defines the language-specific configuration. This configuration contains the name of the StandaloneSetup class and the output folder.</description>
+    </item>
+    
+    <item>
+      <title>Isis Script - First (alpha) version available</title>
+      <link>http://vaulttec.org/post/isis-script-first-alpha-version/</link>
+      <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/post/isis-script-first-alpha-version/</guid>
+      <description>As mentioned in my previous post I&amp;rsquo;ve been working on a DSL for Apache Isis. Now a first (alpha) version is finished. This version provides a very early stage of an Eclipse editor for the Isis Script DSL.
+Only a few features are available yet:
+ entities with injections, properties, events and repository services with injections a simplified version of action for entities and services  This feature set allows us to implement the entity and repository of the domain object SimpleObject from the Apache Isis Maven archetype SimpleApp.</description>
+    </item>
+    
+    <item>
+      <title>Starting a new project - Isis Script</title>
+      <link>http://vaulttec.org/post/starting-new-project-isis-script/</link>
+      <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/post/starting-new-project-isis-script/</guid>
+      <description>Recently I found some spare time to look into Sculptor issue #158. Here Dan Haywood suggested to add support for the programming model of Apache Isis.
+The DSL outlined in JIRA ticket ISIS-369 shows similarities to Sculptors DSL: It has persistent entities (with properties/attributes and actions/operations) and services (actions/operations). The Isis DSL defines a model with objects which can be directly mapped to fully functional Java objects (with annotations and code blocks).</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://vaulttec.org/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://vaulttec.org/projects/</guid>
+      <description>Projects I&amp;rsquo;ve been working on:
+ Isis Script, a xtext-based DSL for the Apache Isis framework Veloedit, an eclipse-based editor for the Apache Velocity template language (VTL) Ansible roles for installation of Vagrant, Zsh or Sublime Text  </description>
+    </item>
+    
+  </channel>
+</rss>

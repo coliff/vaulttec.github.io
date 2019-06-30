@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Isis Script - Updated (alpha) version available</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #2196F3;
+        --border-width:  0 ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://vaulttec.org/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.55.6" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Isis Script - Updated (alpha) version available</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:torsten.juergeleit@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/vaulttec/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/torstenjuergeleit/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/isis-script-updated-alpha-version/">Isis Script - Updated (alpha) version available</a></h4>
+    <h5>September 5, 2015</h5>
+    
+    <a href="http://vaulttec.orgtags/isis"><kbd class="item-tag">isis</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/dsl"><kbd class="item-tag">dsl</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/eclipse"><kbd class="item-tag">eclipse</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xtext"><kbd class="item-tag">xtext</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><p>As mentioned in my <a href="http://vaulttec.org/post/isis-script-dsl-description/">previous post</a> a formal <a href="https://github.com/vaulttec/isis-script/blob/develop/dsl.md">description of the Isis Script DSL</a> can be found on GitHub. An updated implementation of the <a href="https://github.com/vaulttec/isis-script#the-eclipse-dsl-editor">Isis Script Eclipse editor</a> is available as well.</p>
+
+<p><img src="/images/isis-script-updated-alpha-version/simpleobject-dsl-editor.png" alt="Isis Script DSL Editor" /></p>
+
+<p>Now the following features are support:</p>
+
+<ul>
+<li><a href="https://github.com/vaulttec/isis-script/blob/develop/dsl.md#entities">Entities</a> with injections, properties, collections, action, events and UI hints</li>
+<li><a href="https://github.com/vaulttec/isis-script/blob/develop/dsl.md#services">Services</a> with injections, actions and events</li>
+</ul>
+
+<p>This feature set allows us to implement the entity and the repository service of the domain object <code>SimpleObject</code> from the <a href="http://isis.apache.org/guides/ug.html#_ug_getting-started_simpleapp-archetype">Apache Isis Maven archetype SimpleApp</a>. The corresponding Isis Scripts (based on the new version of the DSL) are as follows:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> domainapp.dom.modules.simple
+
+<span style="color:#f92672">import</span> javax.jdo.annotations.Column
+<span style="color:#f92672">import</span> javax.jdo.annotations.DatastoreIdentity
+<span style="color:#f92672">import</span> javax.jdo.annotations.IdGeneratorStrategy
+<span style="color:#f92672">import</span> javax.jdo.annotations.IdentityType
+<span style="color:#f92672">import</span> javax.jdo.annotations.PersistenceCapable
+<span style="color:#f92672">import</span> javax.jdo.annotations.Queries
+<span style="color:#f92672">import</span> javax.jdo.annotations.Query
+<span style="color:#f92672">import</span> javax.jdo.annotations.Unique
+<span style="color:#f92672">import</span> javax.jdo.annotations.Version
+<span style="color:#f92672">import</span> javax.jdo.annotations.VersionStrategy
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.Action
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.BookmarkPolicy
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.DomainObject
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.DomainObjectLayout
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.Editing
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.Parameter
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.ParameterLayout
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.Property
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.Title
+<span style="color:#f92672">import</span> org.apache.isis.applib.services.i18n.TranslatableString
+
+<span style="color:#a6e22e">@PersistenceCapable</span><span style="color:#f92672">(</span>identityType<span style="color:#f92672">=</span>IdentityType<span style="color:#f92672">.</span><span style="color:#a6e22e">DATASTORE</span><span style="color:#f92672">)</span>
+<span style="color:#a6e22e">@DatastoreIdentity</span><span style="color:#f92672">(</span>strategy<span style="color:#f92672">=</span>IdGeneratorStrategy<span style="color:#f92672">.</span><span style="color:#a6e22e">IDENTITY</span><span style="color:#f92672">,</span> column<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#a6e22e">@Version</span><span style="color:#f92672">(</span>strategy<span style="color:#f92672">=</span>VersionStrategy<span style="color:#f92672">.</span><span style="color:#a6e22e">VERSION_NUMBER</span><span style="color:#f92672">,</span> column<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;version&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#a6e22e">@Queries</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#f92672">[</span>
+	<span style="color:#a6e22e">@Query</span><span style="color:#f92672">(</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;find&#34;</span><span style="color:#f92672">,</span> language <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JDOQL&#34;</span><span style="color:#f92672">,</span>
+		value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SELECT FROM domainapp.dom.modules.simple.SimpleObject&#34;</span><span style="color:#f92672">),</span>
+	<span style="color:#a6e22e">@Query</span><span style="color:#f92672">(</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;findByName&#34;</span><span style="color:#f92672">,</span> language <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JDOQL&#34;</span><span style="color:#f92672">,</span>
+		value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SELECT FROM domainapp.dom.modules.simple.SimpleObject WHERE name.indexOf(:name) &gt;= 0&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">])</span>
+<span style="color:#a6e22e">@Unique</span><span style="color:#f92672">(</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;SimpleObject_name_UNQ&#34;</span><span style="color:#f92672">,</span> members <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">#</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">])</span>
+<span style="color:#a6e22e">@DomainObject</span><span style="color:#f92672">(</span>objectType <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SIMPLE&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#a6e22e">@DomainObjectLayout</span><span style="color:#f92672">(</span>bookmarking <span style="color:#f92672">=</span> BookmarkPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">AS_ROOT</span><span style="color:#f92672">)</span>
+entity SimpleObject <span style="color:#f92672">{</span>
+
+	<span style="color:#a6e22e">@Column</span><span style="color:#f92672">(</span>allowsNull<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">,</span> length <span style="color:#f92672">=</span> 40<span style="color:#f92672">)</span>
+	<span style="color:#a6e22e">@Title</span><span style="color:#f92672">(</span>sequence<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#a6e22e">@Property</span><span style="color:#f92672">(</span>editing <span style="color:#f92672">=</span> Editing<span style="color:#f92672">.</span><span style="color:#a6e22e">DISABLED</span><span style="color:#f92672">)</span>
+	property String name
+
+	<span style="color:#a6e22e">@Action</span><span style="color:#f92672">(</span>domainEvent <span style="color:#f92672">=</span> UpdateNameDomainEvent<span style="color:#f92672">)</span>
+	action SimpleObject updateName <span style="color:#f92672">{</span>
+		<span style="color:#a6e22e">@Parameter</span><span style="color:#f92672">(</span>maxLength <span style="color:#f92672">=</span> 40<span style="color:#f92672">)</span>
+		<span style="color:#a6e22e">@ParameterLayout</span><span style="color:#f92672">(</span>named <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;New name&#34;</span><span style="color:#f92672">)</span>
+		parameter String newName <span style="color:#f92672">{</span>
+			<span style="color:#66d9ef">default</span> <span style="color:#f92672">{</span>
+				getName
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span>
+		body <span style="color:#f92672">{</span>
+			setName<span style="color:#f92672">(</span>newName<span style="color:#f92672">)</span>
+			<span style="color:#66d9ef">this</span>
+		<span style="color:#f92672">}</span>
+		validate <span style="color:#f92672">{</span>
+			<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>newName<span style="color:#f92672">.</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;!&#34;</span><span style="color:#f92672">))</span>
+				TranslatableString<span style="color:#f92672">.</span><span style="color:#a6e22e">tr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Exclamation mark is not allowed&#34;</span><span style="color:#f92672">)</span>
+			<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span>
+		<span style="color:#f92672">}</span>
+		event UpdateNameDomainEvent
+	<span style="color:#f92672">}</span>
+
+	title <span style="color:#f92672">{</span>
+		TranslatableString<span style="color:#f92672">.</span><span style="color:#a6e22e">tr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Object: {name}&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">,</span> name<span style="color:#f92672">)</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> domainapp.dom.modules.simple
+
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.DomainServiceLayout
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.DomainService
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.Action
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.SemanticsOf
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.BookmarkPolicy
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.ActionLayout
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.MemberOrder
+<span style="color:#f92672">import</span> org.apache.isis.applib.annotation.ParameterLayout
+<span style="color:#f92672">import</span> org.apache.isis.applib.query.QueryDefault
+<span style="color:#f92672">import</span> java.util.List
+
+<span style="color:#a6e22e">@DomainService</span><span style="color:#f92672">(</span>repositoryFor <span style="color:#f92672">=</span> SimpleObject<span style="color:#f92672">)</span>
+<span style="color:#a6e22e">@DomainServiceLayout</span><span style="color:#f92672">(</span>menuOrder <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;10&#34;</span><span style="color:#f92672">)</span>
+service SimpleObjects <span style="color:#f92672">{</span>
+
+	<span style="color:#a6e22e">@Action</span><span style="color:#f92672">(</span>semantics <span style="color:#f92672">=</span> SemanticsOf<span style="color:#f92672">.</span><span style="color:#a6e22e">SAFE</span><span style="color:#f92672">)</span>
+	<span style="color:#a6e22e">@ActionLayout</span><span style="color:#f92672">(</span>bookmarking <span style="color:#f92672">=</span> BookmarkPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">AS_ROOT</span><span style="color:#f92672">)</span>
+	<span style="color:#a6e22e">@MemberOrder</span><span style="color:#f92672">(</span>sequence <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1&#34;</span><span style="color:#f92672">)</span>
+	action List<span style="color:#f92672">&lt;</span>SimpleObject<span style="color:#f92672">&gt;</span> listAll <span style="color:#f92672">{</span>
+		body <span style="color:#f92672">{</span>
+			container<span style="color:#f92672">.</span><span style="color:#a6e22e">allInstances</span><span style="color:#f92672">(</span>SimpleObject<span style="color:#f92672">)</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Action</span><span style="color:#f92672">(</span>semantics <span style="color:#f92672">=</span> SemanticsOf<span style="color:#f92672">.</span><span style="color:#a6e22e">SAFE</span><span style="color:#f92672">)</span>
+	<span style="color:#a6e22e">@ActionLayout</span><span style="color:#f92672">(</span>bookmarking <span style="color:#f92672">=</span> BookmarkPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">AS_ROOT</span><span style="color:#f92672">)</span>
+	<span style="color:#a6e22e">@MemberOrder</span><span style="color:#f92672">(</span>sequence <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2&#34;</span><span style="color:#f92672">)</span>
+	action List<span style="color:#f92672">&lt;</span>SimpleObject<span style="color:#f92672">&gt;</span> findByName <span style="color:#f92672">{</span>
+		<span style="color:#a6e22e">@ParameterLayout</span><span style="color:#f92672">(</span>named<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span><span style="color:#f92672">)</span> 
+		parameter String name
+		body <span style="color:#f92672">{</span>
+			container<span style="color:#f92672">.</span><span style="color:#a6e22e">allMatches</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> QueryDefault<span style="color:#f92672">(</span>SimpleObject<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;findByName&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">,</span> name<span style="color:#f92672">))</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@MemberOrder</span><span style="color:#f92672">(</span>sequence <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;3&#34;</span><span style="color:#f92672">)</span>
+	action SimpleObject create <span style="color:#f92672">{</span>
+		<span style="color:#a6e22e">@ParameterLayout</span><span style="color:#f92672">(</span>named<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span><span style="color:#f92672">)</span>
+		parameter String name
+		body <span style="color:#f92672">{</span>
+			val obj <span style="color:#f92672">=</span> container<span style="color:#f92672">.</span><span style="color:#a6e22e">newTransientInstance</span><span style="color:#f92672">(</span>SimpleObject<span style="color:#f92672">)</span>
+			obj<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name
+			container<span style="color:#f92672">.</span><span style="color:#a6e22e">persistIfNotAlready</span><span style="color:#f92672">(</span>obj<span style="color:#f92672">)</span>
+			obj
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>If you&rsquo;re interested in giving the updated version of the <a href="https://github.com/vaulttec/isis-script#the-eclipse-dsl-editor">Eclipse editor for Isis Script</a> a try then you can find the corresponding information <a href="https://github.com/vaulttec/isis-script#installation.md">here</a>.</p>
+
+<p>How to use Isis Script in a Maven build is described in <a href="http://vaulttec.org/post/isis-script-and-maven/">this post</a>.</p>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/veloedit-now-availble-on-github/">Veloedit - Now available on GitHub</a></h4>
+    <h5>January 5, 2016</h5>
+    
+    <a href="http://vaulttec.orgtags/eclipse"><kbd class="item-tag">eclipse</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/velocity"><kbd class="item-tag">velocity</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/enabling-template-variable-resolver-for-xbase-imports/">Enabling TemplateVariableResolver for Xbase imports in Xtext editor</a></h4>
+    <h5>October 4, 2015</h5>
+    
+    <a href="http://vaulttec.orgtags/eclipse"><kbd class="item-tag">eclipse</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xtext"><kbd class="item-tag">xtext</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xbase"><kbd class="item-tag">xbase</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/isis-script-dsl-description/">Isis Script DSL Description</a></h4>
+    <h5>September 1, 2015</h5>
+    
+    <a href="http://vaulttec.orgtags/isis"><kbd class="item-tag">isis</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/dsl"><kbd class="item-tag">dsl</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xtext"><kbd class="item-tag">xtext</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vaulttec" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; Torsten Jürgeleit. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Enabling TemplateVariableResolver for Xbase imports in Xtext editor</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #2196F3;
+        --border-width:  0 ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://vaulttec.org/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.55.6" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Enabling TemplateVariableResolver for Xbase imports in Xtext editor</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:torsten.juergeleit@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/vaulttec/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/torstenjuergeleit/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/enabling-template-variable-resolver-for-xbase-imports/">Enabling TemplateVariableResolver for Xbase imports in Xtext editor</a></h4>
+    <h5>October 4, 2015</h5>
+    
+    <a href="http://vaulttec.orgtags/eclipse"><kbd class="item-tag">eclipse</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xtext"><kbd class="item-tag">xtext</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xbase"><kbd class="item-tag">xbase</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><p>While implementing <a href="https://eclipse.org/Xtext/documentation/304_ide_concepts.html#templates">code templates</a> for the <a href="https://github.com/vaulttec/isis-script#the-eclipse-dsl-editor">Isis Script DSL editor</a> I struggled with the template variable resolver for Xbase Imports.</p>
+
+<p><img src="/images/enabling-template-variable-resolver-for-xbase-imports/isis-script-templates.png" alt="Isis Script Templates" /></p>
+
+<p>Despite the corresponding <code>TemplateVariableResolver</code> implementation <a href="https://github.com/eclipse/xtext/blob/e9f0e284c42cda97ea57086c31ba2f5160049b26/plugins/org.eclipse.xtext.xbase.ui/src/org/eclipse/xtext/xbase/ui/templates/ImportsVariableResolver.java"><code>ImportsVariableResolver</code></a> is active by default it&rsquo;s not working as expected - no imports are added.</p>
+
+<p>Debugging the implementation of the <code>resolveVariables()</code> method reveals that it doesn&rsquo;t get the expected <code>TemplateContext</code> implementation <a href="https://github.com/eclipse/xtext/blob/e9f0e284c42cda97ea57086c31ba2f5160049b26/plugins/org.eclipse.xtext.xbase.ui/src/org/eclipse/xtext/xbase/ui/templates/XbaseTemplateContext.java"><code>XbaseTemplateContext</code></a> which provides access to the DSLs import section:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">resolveValues</span><span style="color:#f92672">(</span>TemplateVariable variable<span style="color:#f92672">,</span> XtextTemplateContext xtextTemplateContext<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	variable<span style="color:#f92672">.</span><span style="color:#a6e22e">setUnambiguous</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+	variable<span style="color:#f92672">.</span><span style="color:#a6e22e">setValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">);</span> <span style="color:#75715e">//$NON-NLS-1$
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>xtextTemplateContext <span style="color:#66d9ef">instanceof</span> XbaseTemplateContext<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		XbaseTemplateContext xbaseCtx <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>XbaseTemplateContext<span style="color:#f92672">)</span> xtextTemplateContext<span style="color:#f92672">;</span>
+		List<span style="color:#f92672">&lt;?&gt;</span> params <span style="color:#f92672">=</span> variable<span style="color:#f92672">.</span><span style="color:#a6e22e">getVariableType</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getParams</span><span style="color:#f92672">();</span>
+		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>params<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Iterator<span style="color:#f92672">&lt;?&gt;</span> iterator <span style="color:#f92672">=</span> params<span style="color:#f92672">.</span><span style="color:#a6e22e">iterator</span><span style="color:#f92672">();</span> iterator<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">();)</span> <span style="color:#f92672">{</span>
+				String typeName <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>String<span style="color:#f92672">)</span> iterator<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">();</span>
+				xbaseCtx<span style="color:#f92672">.</span><span style="color:#a6e22e">addImport</span><span style="color:#f92672">(</span>typeName<span style="color:#f92672">);</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;();</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Xtexts content assist retrives this <code>TemplateContext</code> implementation from the  <a href="https://github.com/eclipse/xtext/blob/e9f0e284c42cda97ea57086c31ba2f5160049b26/plugins/org.eclipse.xtext.xbase.ui/src/org/eclipse/xtext/xbase/ui/templates/XbaseTemplateProposalProvider.java"><code>XbaseTemplateProposalProvider</code></a> - an extension of Xtexts <code>DefaultTemplateProposalProvider</code>.</p>
+
+<p>To use <code>XbaseTemplateProposalProvider</code> instead of <code>DefaultTemplateProposalProvider</code> we have to override the corresponding Guice binding for <code>ITemplateProposalProvider</code>:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> Class<span style="color:#f92672">&lt;?</span> <span style="color:#66d9ef">extends</span> ITemplateProposalProvider<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">bindITemplateProposalProvider</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">return</span> DefaultTemplateProposalProvider<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Unluckily <code>XbaseTemplateProposalProvider</code> can&rsquo;t be used here due to the lack of an <code>@Inject</code> annotation for its constructor (Xtext version 2.8.4). So we have to create <a href="https://github.com/vaulttec/isis-script/blob/develop/isis-script-eclipse/org.vaulttec.isis.script.ui/src/org/vaulttec/isis/script/ui/contentassist/IsisTemplateProposalProvider.java">our own subclass</a> providing an annotated constructor</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Singleton</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IsisTemplateProposalProvider</span> <span style="color:#66d9ef">extends</span> XbaseTemplateProposalProvider <span style="color:#f92672">{</span>
+
+	<span style="color:#a6e22e">@Inject</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">IsisTemplateProposalProvider</span><span style="color:#f92672">(</span>TemplateStore templateStore<span style="color:#f92672">,</span> ContextTypeRegistry registry<span style="color:#f92672">,</span>
+			ContextTypeIdHelper helper<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>templateStore<span style="color:#f92672">,</span> registry<span style="color:#f92672">,</span> helper<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>and use this in our Xtext editors <a href="https://github.com/vaulttec/isis-script/blob/develop/isis-script-eclipse/org.vaulttec.isis.script.ui/src/org/vaulttec/isis/script/ui/IsisUiModule.java">UI Guice module</a></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IsisUiModule</span> <span style="color:#66d9ef">extends</span> AbstractIsisUiModule <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">IsisUiModule</span><span style="color:#f92672">(</span>AbstractUIPlugin plugin<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>plugin<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> Class<span style="color:#f92672">&lt;?</span> <span style="color:#66d9ef">extends</span> ITemplateProposalProvider<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">bindITemplateProposalProvider</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> IsisTemplateProposalProvider<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Providing our own subclass of <code>XbaseTemplateProposalProvider</code> allows us to customize the template proposals of our Xtext editor. Here we can override <code>getImage()</code> to show a different image for the proposals or override <code>getRelevance()</code> for changing the order of the proposals.</p>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/veloedit-now-availble-on-github/">Veloedit - Now available on GitHub</a></h4>
+    <h5>January 5, 2016</h5>
+    
+    <a href="http://vaulttec.orgtags/eclipse"><kbd class="item-tag">eclipse</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/velocity"><kbd class="item-tag">velocity</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/isis-script-updated-alpha-version/">Isis Script - Updated (alpha) version available</a></h4>
+    <h5>September 5, 2015</h5>
+    
+    <a href="http://vaulttec.orgtags/isis"><kbd class="item-tag">isis</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/dsl"><kbd class="item-tag">dsl</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/eclipse"><kbd class="item-tag">eclipse</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xtext"><kbd class="item-tag">xtext</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/isis-script-dsl-description/">Isis Script DSL Description</a></h4>
+    <h5>September 1, 2015</h5>
+    
+    <a href="http://vaulttec.orgtags/isis"><kbd class="item-tag">isis</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/dsl"><kbd class="item-tag">dsl</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xtext"><kbd class="item-tag">xtext</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vaulttec" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; Torsten Jürgeleit. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

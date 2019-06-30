@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Veloedit - Now available on GitHub</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #2196F3;
+        --border-width:  0 ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://vaulttec.org/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.55.6" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Veloedit - Now available on GitHub</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:torsten.juergeleit@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/vaulttec/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/torstenjuergeleit/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/veloedit-now-availble-on-github/">Veloedit - Now available on GitHub</a></h4>
+    <h5>January 5, 2016</h5>
+    
+    <a href="http://vaulttec.orgtags/eclipse"><kbd class="item-tag">eclipse</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/velocity"><kbd class="item-tag">velocity</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><p>Recently I found some spare time to look into an issue with one of my first OSS projects - the Eclipse plugin <a href="https://sourceforge.net/projects/veloedit/">Veloedit</a> (published on SourceForge in 2002). Here was reported in <a href="http://sourceforge.net/p/veloedit/bugs/12/">bug #12</a> that the initialization of the <a href="http://velocity.apache.org">Velocity</a> runtime is broken in recent versions of Eclipse.</p>
+
+<p>After fixing this issue (by <a href="https://github.com/vaulttec/veloedit/commit/9cde377f855bdcaa56605f93a78948201e7b0f6d">adding 6 lines of code</a>) I had to fiddle around with yesterdays technology:</p>
+
+<ul>
+<li>commiting to CVS</li>
+<li>building Eclipse plugins manually via PDE</li>
+<li>uploading files to SourceForge manually via SSH</li>
+</ul>
+
+<p>Here I took the opportunity to improve the overall process with approaches I used in another OSS project (<a href="http://sculptorgenerator.org/documentation/whats-new#version-300">Sculptor - Release 3.0.0</a>):</p>
+
+<ul>
+<li>Version control changed from CVS to Git</li>
+<li>Project hosting changed from <a href="https://sourceforge.net/projects/veloedit/">SourceForge</a> to <a href="https://github.com/vaulttec/veloedit">GitHub</a></li>
+<li>Eclipse plugin build with Maven via <a href="http://eclipse.org/tycho/">Eclipse Tycho</a></li>
+<li>Deployment of Eclipse p2 repository to GitHub repository branch via <a href="https://github.com/github/maven-plugins#site-plugin">GitHub Maven Site plugin</a></li>
+</ul>
+
+<p>Now the source code is avilable on GitHub in the repository <a href="https://github.com/vaulttec/veloedit">vaulttec/veloedit</a>. The corresponding Eclipse update site is available from <a href="https://raw.githubusercontent.com/vaulttec/veloedit/updatesite/">https://raw.githubusercontent.com/vaulttec/veloedit/updatesite/</a> (a branch of this repository).</p>
+
+<p>So use your recent Eclipse installation and give the updated plugin a try.</p>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/enabling-template-variable-resolver-for-xbase-imports/">Enabling TemplateVariableResolver for Xbase imports in Xtext editor</a></h4>
+    <h5>October 4, 2015</h5>
+    
+    <a href="http://vaulttec.orgtags/eclipse"><kbd class="item-tag">eclipse</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xtext"><kbd class="item-tag">xtext</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xbase"><kbd class="item-tag">xbase</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/isis-script-updated-alpha-version/">Isis Script - Updated (alpha) version available</a></h4>
+    <h5>September 5, 2015</h5>
+    
+    <a href="http://vaulttec.orgtags/isis"><kbd class="item-tag">isis</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/dsl"><kbd class="item-tag">dsl</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/eclipse"><kbd class="item-tag">eclipse</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xtext"><kbd class="item-tag">xtext</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/isis-script-first-alpha-version/">Isis Script - First (alpha) version available</a></h4>
+    <h5>July 6, 2015</h5>
+    
+    <a href="http://vaulttec.orgtags/isis"><kbd class="item-tag">isis</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/dsl"><kbd class="item-tag">dsl</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/eclipse"><kbd class="item-tag">eclipse</kbd></a>
+    
+    <a href="http://vaulttec.orgtags/xtext"><kbd class="item-tag">xtext</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vaulttec" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; Torsten Jürgeleit. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+
